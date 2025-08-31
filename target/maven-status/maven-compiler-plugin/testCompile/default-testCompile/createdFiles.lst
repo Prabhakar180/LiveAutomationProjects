@@ -1,0 +1,12 @@
+tutorialsninja\register\Constants.class
+tutorialsninja\register\Locators.class
+tutorialsninja\register\Locators$Names.class
+tutorialsninja\register\Locators$linkText.class
+tutorialsninja\register\LocatorTemplates.class
+temp\GenerateEmailDemo.class
+tutorialsninja\register\Locators$CssSelectors.class
+tutorialsninja\register\Methods.class
+tutorialsninja\register\Locators$XPaths.class
+tutorialsninja\register\LocatorFactory.class
+tutorialsninja\register\Locators$Ids.class
+tutorialsninja\register\BaseTest.class

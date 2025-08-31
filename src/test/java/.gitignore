@@ -1,0 +1,10 @@
+# Ignore build outputs
+/target/
+/test-output/
+
+# Ignore logs
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
