@@ -35,6 +35,8 @@ public class Locators {
 	public static class linkText {
 		public static final String Register = "Register";
 		public static final String EditYourAccount = "Edit your account information";
+		public static final String SubscribeOrUnsubscribeNewsletter = "Subscribe / unsubscribe to newsletter";
+		
 	}
 
 }
