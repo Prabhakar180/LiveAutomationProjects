@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
+import org.testng.Reporter;
 
 public class Methods {
 
@@ -68,17 +68,16 @@ public class Methods {
 		}
 		return texts;
 	}
-	
-	public String getInnerText(WebDriver driver, By locator) {
-	    try {
-	        WebElement element = driver.findElement(locator);
-	        return element.getText().trim();
-	    } catch (NoSuchElementException e) {
-	        System.out.println("Element not found: " + locator);
-	        return "";
-	    }
-	}
 
+	public String getInnerText(WebDriver driver, By locator) {
+		try {
+			WebElement element = driver.findElement(locator);
+			return element.getText().trim();
+		} catch (NoSuchElementException e) {
+			System.out.println("Element not found: " + locator);
+			return "";
+		}
+	}
 
 	/**
 	 * Verify Registering an Account by providing only the Mandatory fields
@@ -94,6 +93,7 @@ public class Methods {
 		// Navigate to Registration Page
 		driver.findElement(LocatorFactory.getByXpath(Locators.XPaths.MyAccount)).click();
 		driver.findElement(LocatorFactory.getByLinkText(Locators.linkText.Register)).click();
+		Reporter.log("Step 2: Navigated to Registration page", true);
 
 		// Fill Mandatory Fields
 		driver.findElement(
@@ -114,26 +114,33 @@ public class Methods {
 		driver.findElement(LocatorFactory
 				.getById(String.format(LocatorTemplates.INPUT_ID_TEMPLATE, Locators.Ids.Confirm_Password)))
 				.sendKeys(password);
+		Reporter.log("Step 3: Registration form filled successfully", true);
 
 		// Agree to Terms and Submit
 		driver.findElement(LocatorFactory.getByName(Locators.Names.Agree)).click();
 		driver.findElement(LocatorFactory.getByXpath(Locators.XPaths.Continue)).click();
+		Reporter.log("Step 4: Clicked Continue to submit the form", true);
 
 		// Verify Account Creation Success
 		Assert.assertEquals(driver.findElement(LocatorFactory.getByXpath(Locators.XPaths.AccountCreated)).getText(),
-				Constants.AccountCreated_SUCCESS);
+				Constants.AccountCreated_SUCCESS, "Account creation success message did not match!");
+		Reporter.log("Step 5: Account registered successfully - success message displayed", true);
 
 		// Validate proper details should be displayed on the page
+		String[] expectedDetails = { Constants.expectedProperDetailsOne, Constants.expectedProperDetailsTwo,
+				Constants.expectedProperDetailsThree, Constants.expectedProperDetailsFour };
 		String actualProperDetails = driver.findElement(LocatorFactory.getById(Locators.Ids.Content)).getText();
-		Assert.assertTrue(actualProperDetails.contains(Constants.expectedProperDetailsOne));
-		Assert.assertTrue(actualProperDetails.contains(Constants.expectedProperDetailsTwo));
-		Assert.assertTrue(actualProperDetails.contains(Constants.expectedProperDetailsThree));
-		Assert.assertTrue(actualProperDetails.contains(Constants.expectedProperDetailsFour));
+		for (String expected : expectedDetails) {
+			Assert.assertTrue(actualProperDetails.contains(expected),
+					"Expected text not found: " + expected + "\nActual content: " + actualProperDetails);
+			Reporter.log("Validated presence of: " + expected, true);
+		}
 
 		// Final Confirmation and Navigation
 		driver.findElement(LocatorFactory.getByXpath(Locators.XPaths.ContinueButton)).click();
 		Assert.assertTrue(
-				driver.findElement(LocatorFactory.getByLinkText(Locators.linkText.EditYourAccount)).isDisplayed());
+				driver.findElement(LocatorFactory.getByLinkText(Locators.linkText.EditYourAccount)).isDisplayed(),
+				"Edit Your Account' link is NOT displayed!");
 	}
 
 	/**
@@ -150,6 +157,7 @@ public class Methods {
 		// Navigate to Registration Page
 		driver.findElement(LocatorFactory.getByXpath(Locators.XPaths.MyAccount)).click();
 		driver.findElement(LocatorFactory.getByLinkText(Locators.linkText.Register)).click();
+		Reporter.log("Step 2: Navigated to Registration page", true);
 
 		// Fill Mandatory Fields
 		driver.findElement(
@@ -170,27 +178,29 @@ public class Methods {
 		driver.findElement(LocatorFactory
 				.getById(String.format(LocatorTemplates.INPUT_ID_TEMPLATE, Locators.Ids.Confirm_Password)))
 				.sendKeys(password);
+		Reporter.log("Step 3: Registration form filled successfully", true);
 
 		// Select News letter, Agree to Terms and Submit
 		selectRadioButtonAndValidate(driver, By.xpath(Locators.XPaths.Newsletter));
 		driver.findElement(LocatorFactory.getByName(Locators.Names.Agree)).click();
 		driver.findElement(LocatorFactory.getByXpath(Locators.XPaths.Continue)).click();
-
-		// Verify Account Creation Success
-		Assert.assertEquals(driver.findElement(LocatorFactory.getByXpath(Locators.XPaths.AccountCreated)).getText(),
-				Constants.AccountCreated_SUCCESS);
+		Reporter.log("Step 4: Clicked Continue to submit the form", true);
 
 		// Validate proper details should be displayed on the page
+		String[] expectedDetails = { Constants.expectedProperDetailsOne, Constants.expectedProperDetailsTwo,
+				Constants.expectedProperDetailsThree, Constants.expectedProperDetailsFour };
 		String actualProperDetails = driver.findElement(LocatorFactory.getById(Locators.Ids.Content)).getText();
-		Assert.assertTrue(actualProperDetails.contains(Constants.expectedProperDetailsOne));
-		Assert.assertTrue(actualProperDetails.contains(Constants.expectedProperDetailsTwo));
-		Assert.assertTrue(actualProperDetails.contains(Constants.expectedProperDetailsThree));
-		Assert.assertTrue(actualProperDetails.contains(Constants.expectedProperDetailsFour));
+		for (String expected : expectedDetails) {
+			Assert.assertTrue(actualProperDetails.contains(expected),
+					"Expected text not found: " + expected + "\nActual content: " + actualProperDetails);
+			Reporter.log("Validated presence of: " + expected, true);
+		}
 
 		// Final Confirmation and Navigation
 		driver.findElement(LocatorFactory.getByXpath(Locators.XPaths.ContinueButton)).click();
 		Assert.assertTrue(
-				driver.findElement(LocatorFactory.getByLinkText(Locators.linkText.EditYourAccount)).isDisplayed());
+				driver.findElement(LocatorFactory.getByLinkText(Locators.linkText.EditYourAccount)).isDisplayed(),
+				"Edit Your Account' link is NOT displayed!");
 	}
 
 }

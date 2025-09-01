@@ -1,22 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Step 1: Browser launched and navigated to TutorialNinja homepage]]>
+    </line>
+    <line>
+      <![CDATA[Step 2: Navigated to Registration page]]>
+    </line>
+    <line>
+      <![CDATA[Step 3: Registration form filled successfully]]>
+    </line>
+    <line>
+      <![CDATA[Step 4: Clicked Continue to submit the form]]>
+    </line>
+    <line>
+      <![CDATA[Step 5: Account registered successfully - success message displayed]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: Congratulations! Your new account has been successfully created!]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: You can now take advantage of member privileges to enhance your online shopping experience with us.]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: If you have ANY questions about the operation of this online shop, please e-mail the store owner.]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: contact us]]>
+    </line>
+    <line>
+      <![CDATA[Step 6: Browser closed]]>
+    </line>
+    <line>
+      <![CDATA[Step 1: Browser launched and navigated to TutorialNinja homepage]]>
+    </line>
+    <line>
+      <![CDATA[Step 2: Navigated to Registration page]]>
+    </line>
+    <line>
+      <![CDATA[Step 3: Registration form filled successfully]]>
+    </line>
+    <line>
+      <![CDATA[Step 4: Clicked Continue to submit the form]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: Congratulations! Your new account has been successfully created!]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: You can now take advantage of member privileges to enhance your online shopping experience with us.]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: If you have ANY questions about the operation of this online shop, please e-mail the store owner.]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: contact us]]>
+    </line>
+    <line>
+      <![CDATA[Step 6: Browser closed]]>
+    </line>
+    <line>
+      <![CDATA[Step 1: Browser launched and navigated to TutorialNinja homepage]]>
+    </line>
+    <line>
+      <![CDATA[Step 2: Navigated to Registration page]]>
+    </line>
+    <line>
+      <![CDATA[Step 3: Clicked 'Continue' to submit the form without entering any fields]]>
+    </line>
+    <line>
+      <![CDATA[Step 4: Validated all mandatory field warning messages]]>
+    </line>
+    <line>
+      <![CDATA[Step 6: Browser closed]]>
+    </line>
+    <line>
+      <![CDATA[Step 1: Browser launched and navigated to TutorialNinja homepage]]>
+    </line>
+    <line>
+      <![CDATA[Step 2: Navigated to Registration page]]>
+    </line>
+    <line>
+      <![CDATA[Step 3: Registration form filled successfully]]>
+    </line>
+    <line>
+      <![CDATA[Step 4: Clicked Continue to submit the form]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: Congratulations! Your new account has been successfully created!]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: You can now take advantage of member privileges to enhance your online shopping experience with us.]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: If you have ANY questions about the operation of this online shop, please e-mail the store owner.]]>
+    </line>
+    <line>
+      <![CDATA[Validated presence of: contact us]]>
+    </line>
+    <line>
+      <![CDATA[Step 6: Clicked on 'Subscribe to newsletter' option and validated 'Yes' is selected]]>
+    </line>
+    <line>
+      <![CDATA[Step 6: Browser closed]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-08-31T20:40:01 IST" name="Surefire suite" finished-at="2025-08-31T20:40:08 IST" duration-ms="6584">
+  <suite started-at="2025-09-01T00:15:14 IST" name="Surefire suite" finished-at="2025-09-01T00:15:42 IST" duration-ms="27885">
     <groups>
     </groups>
-    <test started-at="2025-08-31T20:40:01 IST" name="Surefire test" finished-at="2025-08-31T20:40:08 IST" duration-ms="6584">
+    <test started-at="2025-09-01T00:15:14 IST" name="Surefire test" finished-at="2025-09-01T00:15:42 IST" duration-ms="27885">
       <class name="tutorialsninja.register.RegisterFunctionality_TS_001">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@36c88a32]" started-at="2025-08-31T20:40:01 IST" name="setUp" finished-at="2025-08-31T20:40:06 IST" duration-ms="4679" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:14 IST" name="setUp" finished-at="2025-09-01T00:15:18 IST" duration-ms="4007" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Step 1: Browser launched and navigated to TutorialNinja homepage]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_RF_004()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@36c88a32]" started-at="2025-08-31T20:40:06 IST" name="TC_RF_004" description="Verify proper notification messages are displayed for the mandatory fields, when you don&#039;t provide any fields in the &#039;Register Account&#039; page and submit" finished-at="2025-08-31T20:40:07 IST" duration-ms="1651" status="PASS">
+        <test-method signature="TC_RF_001()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:18 IST" name="TC_RF_001" description="Verify Registering an Account by providing only the Mandatory fields" finished-at="2025-09-01T00:15:21 IST" duration-ms="2764" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Step 2: Navigated to Registration page]]>
+            </line>
+            <line>
+              <![CDATA[Step 3: Registration form filled successfully]]>
+            </line>
+            <line>
+              <![CDATA[Step 4: Clicked Continue to submit the form]]>
+            </line>
+            <line>
+              <![CDATA[Step 5: Account registered successfully - success message displayed]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: Congratulations! Your new account has been successfully created!]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: You can now take advantage of member privileges to enhance your online shopping experience with us.]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: If you have ANY questions about the operation of this online shop, please e-mail the store owner.]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: contact us]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_RF_001 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:21 IST" name="tearDown" finished-at="2025-09-01T00:15:21 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step 6: Browser closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:21 IST" name="setUp" finished-at="2025-09-01T00:15:25 IST" duration-ms="4450" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step 1: Browser launched and navigated to TutorialNinja homepage]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_RF_003()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:25 IST" name="TC_RF_003" description="Verify Registering an Account by providing all the fields" finished-at="2025-09-01T00:15:29 IST" duration-ms="3042" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step 2: Navigated to Registration page]]>
+            </line>
+            <line>
+              <![CDATA[Step 3: Registration form filled successfully]]>
+            </line>
+            <line>
+              <![CDATA[Step 4: Clicked Continue to submit the form]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: Congratulations! Your new account has been successfully created!]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: You can now take advantage of member privileges to enhance your online shopping experience with us.]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: If you have ANY questions about the operation of this online shop, please e-mail the store owner.]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: contact us]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_RF_003 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:29 IST" name="tearDown" finished-at="2025-09-01T00:15:29 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step 6: Browser closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:29 IST" name="setUp" finished-at="2025-09-01T00:15:32 IST" duration-ms="3416" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step 1: Browser launched and navigated to TutorialNinja homepage]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_RF_004()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:32 IST" name="TC_RF_004" description="Verify proper notification messages are displayed for the mandatory fields, when you don&#039;t provide any fields in the &#039;Register Account&#039; page and submit" finished-at="2025-09-01T00:15:34 IST" duration-ms="1768" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step 2: Navigated to Registration page]]>
+            </line>
+            <line>
+              <![CDATA[Step 3: Clicked 'Continue' to submit the form without entering any fields]]>
+            </line>
+            <line>
+              <![CDATA[Step 4: Validated all mandatory field warning messages]]>
+            </line>
           </reporter-output>
         </test-method> <!-- TC_RF_004 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@36c88a32]" started-at="2025-08-31T20:40:07 IST" name="tearDown" finished-at="2025-08-31T20:40:08 IST" duration-ms="214" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:34 IST" name="tearDown" finished-at="2025-09-01T00:15:34 IST" duration-ms="164" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Step 6: Browser closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:34 IST" name="setUp" finished-at="2025-09-01T00:15:38 IST" duration-ms="4345" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step 1: Browser launched and navigated to TutorialNinja homepage]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_RF_005()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:38 IST" name="TC_RF_005" description="Verify Registering an Account when &#039;Yes&#039; option is selected for Newsletter field" finished-at="2025-09-01T00:15:42 IST" duration-ms="3351" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step 2: Navigated to Registration page]]>
+            </line>
+            <line>
+              <![CDATA[Step 3: Registration form filled successfully]]>
+            </line>
+            <line>
+              <![CDATA[Step 4: Clicked Continue to submit the form]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: Congratulations! Your new account has been successfully created!]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: You can now take advantage of member privileges to enhance your online shopping experience with us.]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: If you have ANY questions about the operation of this online shop, please e-mail the store owner.]]>
+            </line>
+            <line>
+              <![CDATA[Validated presence of: contact us]]>
+            </line>
+            <line>
+              <![CDATA[Step 6: Clicked on 'Subscribe to newsletter' option and validated 'Yes' is selected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_RF_005 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsninja.register.RegisterFunctionality_TS_001@7f552bd3]" started-at="2025-09-01T00:15:42 IST" name="tearDown" finished-at="2025-09-01T00:15:42 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step 6: Browser closed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tutorialsninja.register.RegisterFunctionality_TS_001 -->
